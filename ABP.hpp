@@ -13,7 +13,7 @@ public:
     }
     ~ABP()
     {
-        cout << "\n\n\t<< DESTRUINDO A ÁRVORE >>\n";
+        cout << "\n\n\t<< DESTRUINDO A ÃRVORE >>\n";
         if(raiz)
             apaga(raiz);
     }
@@ -88,12 +88,11 @@ public:
         }
         return NULL;
     }
-    void imprimeAncestrais(Nodo* nodo) // Utiliza recursividade
+    void imprimeAncestrais(Nodo* nodo)
     {
-        // Caso o nodo não estiver na árvore
         if(! nodo)
         {
-            cout << "Não existe o nodo!" << endl;
+            cout << "NÃ£o existe o nodo!" << endl;
             return;
         }
         nodo->aluno.imprime();
