@@ -1,3 +1,8 @@
+  
+/*
+[ INSTITUTO FEDERAL DO NORTE DE MINAS GERAIS / CAMPUS MONTES CLAROS - TURMA 2019 DE CIÃŠNCIA DA COMPUTAÃ‡ÃƒO ]
+                                    ALUNO: PATRICK DUARTE PIMENTA | Ano: 2020
+*/
 #include <iostream>
 #include <locale>
 #include "Abp.hpp"
@@ -22,7 +27,7 @@ int main()
 
     ABP abp;
 
-    cout << "\t << Inserção do pai e seus descendentes na árvore binária e impressão >>\n\n"; // OK
+    cout << "\t << InserÃ§Ã£o do pai e seus descendentes na Ã¡rvore binÃ¡ria e impressÃ£o >>\n\n"; // OK
 
     abp.insere(a8);
     abp.insere(a5);
@@ -39,12 +44,12 @@ int main()
 
     abp.preOrdem(); // 8, 5, 3, 2, 1, 4, 6, 7, 12, 9, 11, 10
 
-    cout << "\n\t\t\t << Busca impressão dos filhos e ancestrais >>\n\n";
+    cout << "\n\t\t\t << Busca impressÃ£o dos filhos e ancestrais >>\n\n";
 
     abp.imprimeAncestrais(abp.buscaNodo(10)); // 10, 11, 9, 12, 8
     abp.imprimeAncestrais(abp.buscaNodo(1)); // 1, 2, 3, 5, 8
 
-    cout << "\n\t << Rotaciona à direita, imprime a árvore e ancestrais dos nodos específicos >>\n\n";
+    cout << "\n\t << Rotaciona Ã  direita, imprime a Ã¡rvore e ancestrais dos nodos especÃ­ficos >>\n\n";
 
     abp.rotacionaDireita();
 
@@ -55,7 +60,7 @@ int main()
     abp.imprimeAncestrais(abp.buscaNodo(10)); // 10, 11, 9, 12, 8, 5
     abp.imprimeAncestrais(abp.buscaNodo(1)); // 1, 2, 3, 5
 
-    cout << "\n<< Rotaciona à esquerda duas vezes, imprime a árvore e ancestrais dos nodos específicos >>\n\n";
+    cout << "\n<< Rotaciona Ã  esquerda duas vezes, imprime a Ã¡rvore e ancestrais dos nodos especÃ­ficos >>\n\n";
 
     abp.rotacionaEsquerda();
     abp.rotacionaEsquerda();
